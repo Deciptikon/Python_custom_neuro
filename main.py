@@ -3,7 +3,8 @@ from tkinter import filedialog
 from PIL import Image, ImageTk
 import numpy as np
 
-
+import torch
+print(f'Cuda is {torch.cuda.is_available()}')
 
 # Функция для загрузки и обработки изображения с использованием нейросети
 def process_image():
